@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-            node {
-                label "main"  //change this as per your agent label
-            }
-        }
+    agent none
      environment {
             CI = 'true'
         }
