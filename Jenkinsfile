@@ -1,13 +1,18 @@
 pipeline {
-    agent none
-     environment {
-            CI = 'true'
-        }
-    stages {
-        stage('Build') {
-            steps {
-                sh 'npm install'
-            }
-        }
+  agent any
+  tools {
+      nodejs "node"
+      
+  }
+  stages {
+    stage('Build') {
+      steps {
+        git branch: 'main', url: 'https://github.com/pratik562/Demo_CiCD.git'
+        sh 'npm install'
+      }
+        
     }
+      
+  }
+    
 }
