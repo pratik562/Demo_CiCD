@@ -10,7 +10,7 @@ pipeline {
         git branch: 'main', url: 'https://github.com/pratik562/Demo_CiCD.git'
         sh 'npm install'
         sh 'npm test'
-        sh 'npm run android:build:debug'
+        sh 'cd android && ./gradlew clean && ./gradlew assembleDebug'
       }
         
     }
