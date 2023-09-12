@@ -9,7 +9,7 @@
     "start": "react-native start",
     "test": "jest",
     "android:build:release": "cd android && ./gradlew clean && ./gradlew build && ./gradlew assembleRelease",
-    "android:build:debug": "cd android && ./gradlew clean && ./gradlew build &&./gradlew assembleDebug"
+    "android:build:debug": "cd android && ./gradlew clean && ./gradlew assembleDebug"
   },
   "dependencies": {
     "react": "18.2.0",
